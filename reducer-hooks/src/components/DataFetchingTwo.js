@@ -30,7 +30,7 @@ function DataFetchingTwo() {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(() => {
-        axios.get("https://jsonplaceholder.typicode.com/posts/10")
+        axios.get("https://jsonplaceholder.typicode.com/posts/19")
             .then(response => {
                 dispatch({type: "FETCH_SUCCESS", payload: response.data})
             })
